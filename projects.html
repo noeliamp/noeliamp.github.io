@@ -215,6 +215,14 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
   .slist li{grid-template-columns:1fr}
 }
 
+
+/* acronym badge (for projects without a hotlinkable logo) */
+.logo-btn.acr{justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:1rem;letter-spacing:.01em;text-decoration:none}
+.logo-btn.static{cursor:default}
+.logo-btn.static:hover{transform:none;box-shadow:none}
+.proj-fund{font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;color:var(--ink-mute);text-transform:uppercase;line-height:1.5;margin-top:.15rem}
+.logo-btn.acr{font-size:.9rem;white-space:nowrap;padding:6px 8px}
+
 </style>
 </head>
 <body>
@@ -262,7 +270,7 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
   </section>
   <section>
     <div class="wrap">
-      <p class="subhead" style="margin-top:0">Current · European &amp; national</p>
+      <p class="subhead" style="margin-top:0">Current &amp; European</p>
         <div class="proj">
           <div class="proj-side"><span class="proj-years">2023 – 2025</span><span class="proj-budget">€25.6M</span></div>
           <div>
@@ -300,12 +308,52 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
           </div>
         </div>
 
-      <p class="subhead">Earlier &amp; national projects</p>
-      <div class="pminor"><div><span class="yr">2019 – 2022</span></div><div><h4>TAPIR-CM</h4><p>Advanced techniques to enhance the intelligence of 5G networks.</p><div class="code">P2018/TCS-4496 · Comunidad de Madrid</div></div></div>
-      <div class="pminor"><div><span class="yr">2018 – 2020</span></div><div><h4>DiSCoEdge</h4><p>Distributed storage and computing on the edge of the network.</p><div class="code">TIN2017-88749-R · MICINN</div></div></div>
-      <div class="pminor"><div><span class="yr">2019</span></div><div><h4>WATERMED 4.0</h4><p>Efficient use and management of conventional and non-conventional water resources through smart technologies for Mediterranean agriculture in semi-arid areas.</p><div class="code">PRIMA</div></div></div>
-      <div class="pminor"><div><span class="yr">2014 – 2018</span></div><div><h4>TIGRE5-CM</h4><p>Integrated technologies for management and operation of 5G networks.</p><div class="code">S2013/ICE-2919 · Comunidad de Madrid</div></div></div>
-      <div class="pminor"><div><span class="yr">2015 – 2017</span></div><div><h4>HyperAdapt</h4><p>Modeling and online performance optimization of adaptive networks.</p><div class="code">TEC2014-55713-R · MINECO</div></div></div>
+      <p class="subhead">Earlier projects</p>
+        <div class="proj">
+          <div class="proj-side"><span class="proj-years">2019 – 2022</span><span class="proj-fund">Comunidad de Madrid</span></div>
+          <div>
+            <h3>TAPIR-CM</h3>
+            
+            <p class="desc">Advanced architectural solutions for 5G and beyond, leveraging SDN/NFV and machine learning for network intelligence. Coordinated by IMDEA Networks.</p>
+            <div class="proj-extra"><a class="logo-btn acr" href="https://networks.imdea.org/projects/tapir-cm/" target="_blank" rel="noopener">TAPIR-CM</a></div>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-side"><span class="proj-years">2018 – 2020</span><span class="proj-fund">AEI · Gobierno de España</span></div>
+          <div>
+            <h3>DiSCoEdge</h3>
+            
+            <p class="desc">Distributed storage and computing on the edge of the network.</p>
+            <div class="proj-extra"><span class="logo-btn acr static">DiSCoEdge</span></div>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-side"><span class="proj-years">2019 – 2022</span><span class="proj-fund">PRIMA · EU</span></div>
+          <div>
+            <h3>WATERMED 4.0</h3>
+            
+            <p class="desc">IoT-based decision support system for efficient management of the whole water cycle in Mediterranean agriculture. Coordinated by the University of Murcia.</p>
+            <div class="proj-extra"><a class="logo-btn acr" href="https://www.watermed-project.eu/" target="_blank" rel="noopener">WATERMED</a></div>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-side"><span class="proj-years">2014 – 2018</span><span class="proj-fund">Comunidad de Madrid</span></div>
+          <div>
+            <h3>TIGRE5-CM</h3>
+            
+            <p class="desc">SDN-based architecture for the management and operation of next-generation 5G mobile networks. Coordinated by IMDEA Networks.</p>
+            <div class="proj-extra"><a class="logo-btn acr" href="https://networks.imdea.org/projects/tigre5-cm/" target="_blank" rel="noopener">TIGRE5-CM</a></div>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-side"><span class="proj-years">2015 – 2017</span><span class="proj-fund">MINECO · España</span></div>
+          <div>
+            <h3>HyperAdapt</h3>
+            
+            <p class="desc">Modeling and online performance optimization of adaptive networks.</p>
+            <div class="proj-extra"><span class="logo-btn acr static">HyperAdapt</span></div>
+          </div>
+        </div>
       <div class="foot">© 2026 Noelia Pérez Palma · Universidad de Murcia · Ingeniería Telemática · <a href="https://pages.github.com" target="_blank" rel="noopener">Hosted on GitHub Pages</a></div>
     </div>
   </section>
