@@ -23,50 +23,61 @@
     box-shadow: 0 0 0 1px var(--line), 0 14px 34px rgba(0,0,0,0.14);
   }
 
-  /* --- Banda de afiliaciones y proyectos --- */
-  .affil-band {
-    border-top: 1px solid var(--line);
+  /* --- Logo de institución en la línea temporal (Career path) --- */
+  .org-logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .org-logo { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  /* Distintivo con iniciales que se muestra si el logo no carga */
+  .org-fallback {
+    display: none;
+    font-family: var(--font-display, inherit);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    color: var(--accent, #333);
+    text-align: center;
+    line-height: 1.05;
+  }
+  .org-logo-wrap { margin-bottom: 0.9rem; }
+
+  /* --- Enlace en el título de cada publicación --- */
+  .pub-title a {
+    color: inherit;
+    text-decoration: none;
     border-bottom: 1px solid var(--line);
-    background: var(--paper);
+    transition: color 0.2s ease, border-color 0.2s ease;
   }
-  .affil-inner {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 2.75rem var(--gutter);
-    display: grid;
-    gap: 1.75rem;
+  .pub-title a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
   }
-  .affil-row { display: flex; flex-direction: column; gap: 0.9rem; }
-  .affil-label {
+  .pub-link {
+    display: inline-block;
+    margin-top: 0.35rem;
     font-family: var(--font-mono);
     font-size: 0.72rem;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--ink-mute);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
   }
-  .affil-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-  .chip {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    border-left: 3px solid var(--chip-color, var(--accent));
-    font-size: 0.92rem;
-    font-weight: 500;
-    color: var(--ink);
-    background: transparent;
-    transition: all 0.2s ease;
-  }
-  .chip:hover {
-    background: var(--chip-color, var(--accent));
-    color: #fff;
-    border-color: var(--chip-color, var(--accent));
-    transform: translateY(-2px);
-  }
+  .pub-link:hover { color: var(--accent); border-color: var(--accent); }
 
   @media (max-width: 640px) {
     .hero-photo { width: 140px; height: 140px; margin: 0 auto 1.5rem; }
+    .org-logo-wrap { width: 60px; height: 60px; }
   }
 </style>
 </head>
@@ -115,32 +126,6 @@
         <div><dt>ORCID</dt><dd><a class="inline-link" href="https://orcid.org/0000-0001-6131-7106" target="_blank" rel="noopener">0000-0001-6131-7106</a></dd></div>
       </dl>
     </aside>
-  </div>
-</section>
-
-<!-- ==================== AFFILIATIONS & PROJECTS ==================== -->
-<section class="affil-band" aria-label="Affiliations and projects">
-  <div class="affil-inner">
-    <div class="affil-row">
-      <span class="affil-label">Affiliations · past &amp; present</span>
-      <div class="affil-chips">
-        <span class="chip" style="--chip-color:#8C1D2C">University of Murcia</span>
-        <span class="chip" style="--chip-color:#1B3A6B">Universidad Carlos III de Madrid</span>
-        <span class="chip" style="--chip-color:#0072CE">IMDEA Networks</span>
-        <span class="chip" style="--chip-color:#C8102E">Paderborn University</span>
-        <span class="chip" style="--chip-color:#B01E5A">Universitat Oberta de Catalunya</span>
-        <span class="chip" style="--chip-color:#0B2E63">Telefónica</span>
-      </div>
-    </div>
-    <div class="affil-row">
-      <span class="affil-label">Selected projects</span>
-      <div class="affil-chips">
-        <span class="chip" style="--chip-color:#5B2A86">HEXA-X-II</span>
-        <span class="chip" style="--chip-color:#2E7D5B">HORSE</span>
-        <span class="chip" style="--chip-color:#0E7490">6G-Cloud</span>
-        <span class="chip" style="--chip-color:#B45309">CERBERUS</span>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -271,7 +256,7 @@
         <div class="pub-year">2026</div>
         <div class="pub-body">
           <p class="pub-authors"><strong>Pérez Palma, N.</strong>; Asensio-Garriga, R.; Skarmeta, A.</p>
-          <p class="pub-title">Toward 6G Security: A European Perspective on Needs, Gaps, and Priorities Based on SNS-JU Project Review.</p>
+          <p class="pub-title"><a href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener">Toward 6G Security: A European Perspective on Needs, Gaps, and Priorities Based on SNS-JU Project Review.</a></p>
           <p class="pub-venue"><em>IEEE Communications Standards Magazine</em></p>
         </div>
       </li>
@@ -280,7 +265,7 @@
         <div class="pub-year">2026</div>
         <div class="pub-body">
           <p class="pub-authors">Rizzo, G.; <strong>Pérez Palma, N.</strong>; Ajmone Marsan, M.; Mancuso, V.</p>
-          <p class="pub-title">Floating Gossip: Serverless Distributed Learning in Dynamic Scenarios.</p>
+          <p class="pub-title"><a href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener">Floating Gossip: Serverless Distributed Learning in Dynamic Scenarios.</a></p>
           <p class="pub-venue"><em>IEEE Transactions on Mobile Computing</em> · JCR 7.9 · Q1</p>
         </div>
       </li>
@@ -289,7 +274,7 @@
         <div class="pub-year">2026</div>
         <div class="pub-body">
           <p class="pub-authors">Kerboeuf, S.; Jain, A.; Lopez, D.; et al.; <strong>Pérez Palma, N.</strong></p>
-          <p class="pub-title">Sustainable 6G Platform. <span class="pub-context">Book chapter in</span> <em>6G to Build a Sustainable Future</em>.</p>
+          <p class="pub-title"><a href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener">Sustainable 6G Platform.</a> <span class="pub-context">Book chapter in</span> <em>6G to Build a Sustainable Future</em>.</p>
           <p class="pub-venue">John Wiley &amp; Sons / IEEE Press</p>
         </div>
       </li>
@@ -298,7 +283,7 @@
         <div class="pub-year">2023</div>
         <div class="pub-body">
           <p class="pub-authors">Rizzo, G.; <strong>Pérez Palma, N.</strong>; Ajmone Marsan, M.; Mancuso, V.</p>
-          <p class="pub-title">On the Limit Performance of Floating Gossip.</p>
+          <p class="pub-title"><a href="https://arxiv.org/abs/2302.08413" target="_blank" rel="noopener">On the Limit Performance of Floating Gossip.</a></p>
           <p class="pub-venue"><em>IEEE INFOCOM 2023</em> · CORE A*</p>
         </div>
       </li>
@@ -307,7 +292,7 @@
         <div class="pub-year">2021</div>
         <div class="pub-body">
           <p class="pub-authors"><strong>Pérez Palma, N.</strong>; Dressler, F.; Mancuso, V.</p>
-          <p class="pub-title">PRECISE: Predictive Content Dissemination Scheme Exploiting Realistic Mobility Patterns.</p>
+          <p class="pub-title"><a href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener">PRECISE: Predictive Content Dissemination Scheme Exploiting Realistic Mobility Patterns.</a></p>
           <p class="pub-venue"><em>Computer Networks</em> · Elsevier · JCR 5.49 · Q1</p>
         </div>
       </li>
@@ -316,7 +301,7 @@
         <div class="pub-year">2021</div>
         <div class="pub-body">
           <p class="pub-authors">Rizzo, G.; <strong>Pérez Palma, N.</strong>; Ajmone Marsan, M.; Mancuso, V.</p>
-          <p class="pub-title">Storage Capacity of Opportunistic Information Dissemination Systems.</p>
+          <p class="pub-title"><a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/930/TMC_REVISION.pdf" target="_blank" rel="noopener">Storage Capacity of Opportunistic Information Dissemination Systems.</a></p>
           <p class="pub-venue"><em>IEEE Transactions on Mobile Computing</em> · JCR 7.9 · Q1</p>
         </div>
       </li>
@@ -336,6 +321,10 @@
       <li class="timeline-item">
         <div class="timeline-dates">2022 – Now</div>
         <div class="timeline-content">
+          <div class="org-logo-wrap">
+            <img class="org-logo" src="logos/umu.png" alt="University of Murcia logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="org-fallback">UMU</span>
+          </div>
           <h3>Postdoctoral Researcher</h3>
           <p class="timeline-org">University of Murcia · Dept. of Information and Communications Engineering</p>
           <p class="timeline-desc">Intelligent Systems and Telematics group (Prof. Antonio Skarmeta). Research on 6G security and trustworthiness. Teaching in undergraduate and Master programmes.</p>
@@ -345,6 +334,10 @@
       <li class="timeline-item">
         <div class="timeline-dates">2022 – 2024</div>
         <div class="timeline-content">
+          <div class="org-logo-wrap">
+            <img class="org-logo" src="logos/uoc.png" alt="Universitat Oberta de Catalunya logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="org-fallback">UOC</span>
+          </div>
           <h3>Collaborator Professor (online teaching)</h3>
           <p class="timeline-org">Universitat Oberta de Catalunya (UOC)</p>
           <p class="timeline-desc">Online teaching of Network Fundamentals and Architectures, and Network Control and Management.</p>
@@ -354,6 +347,10 @@
       <li class="timeline-item">
         <div class="timeline-dates">2019</div>
         <div class="timeline-content">
+          <div class="org-logo-wrap">
+            <img class="org-logo" src="logos/paderborn.png" alt="Paderborn University logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="org-fallback">UPB</span>
+          </div>
           <h3>Visiting Scholar</h3>
           <p class="timeline-org">Paderborn University · CCS Labs · Germany</p>
           <p class="timeline-desc">Six-month research stay with Prof. Falko Dressler. Extended opportunistic communication paradigms to realistic mobility scenarios; results published as first author in <em>Computer Networks</em>.</p>
@@ -363,6 +360,10 @@
       <li class="timeline-item">
         <div class="timeline-dates">2016 – 2022</div>
         <div class="timeline-content">
+          <div class="org-logo-wrap">
+            <img class="org-logo" src="logos/imdea.png" alt="IMDEA Networks Institute logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="org-fallback">IMDEA</span>
+          </div>
           <h3>Research Engineer / PhD Candidate</h3>
           <p class="timeline-org">IMDEA Networks Institute · Wireless Networking Group</p>
           <p class="timeline-desc">Doctoral studies on D2D communications, opportunistic content dissemination and mobile computing. Publications in IEEE TMC, IEEE INFOCOM and IEEE WoWMoM.</p>
@@ -372,6 +373,10 @@
       <li class="timeline-item">
         <div class="timeline-dates">2014 – 2016</div>
         <div class="timeline-content">
+          <div class="org-logo-wrap">
+            <img class="org-logo" src="logos/telefonica.png" alt="Telefónica logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="org-fallback">Telefónica</span>
+          </div>
           <h3>Testing Analyst · Project Manager</h3>
           <p class="timeline-org">Telefónica de España S.A.U. · Madrid</p>
           <p class="timeline-desc">Industry experience in a major telecommunications operator. Recipient of the Telefónica Talentum Universities scholarship.</p>
