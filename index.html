@@ -28,17 +28,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 64px;
-    padding: 8px 10px;
+    width: 100%;
+    max-width: 130px;
+    height: 54px;
+    padding: 7px 9px;
+    margin-top: 0.65rem;
     border: 1px solid var(--line);
-    border-radius: 12px;
+    border-radius: 10px;
     background: #fff;
-    flex-shrink: 0;
     overflow: hidden;
   }
   .org-logo { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
-  /* Distintivo con iniciales que se muestra si el logo no carga */
   .org-fallback {
     display: none;
     font-family: var(--font-display, inherit);
@@ -49,7 +49,6 @@
     text-align: center;
     line-height: 1.05;
   }
-  .org-logo-wrap { margin-bottom: 0.9rem; }
 
   /* --- Enlace en el título de cada publicación --- */
   .pub-title a {
@@ -77,7 +76,7 @@
 
   @media (max-width: 640px) {
     .hero-photo { width: 140px; height: 140px; margin: 0 auto 1.5rem; }
-    .org-logo-wrap { width: 104px; height: 56px; }
+    .org-logo-wrap { max-width: 110px; height: 48px; }
   }
 </style>
 </head>
@@ -265,7 +264,7 @@
         <div class="pub-year">2026</div>
         <div class="pub-body">
           <p class="pub-authors">Rizzo, G.; <strong>Pérez Palma, N.</strong>; Ajmone Marsan, M.; Mancuso, V.</p>
-          <p class="pub-title"><a href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener">Floating Gossip: Serverless Distributed Learning in Dynamic Scenarios.</a></p>
+          <p class="pub-title"><a href="https://ieeexplore.ieee.org/author/37088527083" target="_blank" rel="noopener">Floating Gossip: Serverless Distributed Learning in Dynamic Scenarios.</a></p>
           <p class="pub-venue"><em>IEEE Transactions on Mobile Computing</em> · JCR 7.9 · Q1</p>
         </div>
       </li>
@@ -283,7 +282,7 @@
         <div class="pub-year">2023</div>
         <div class="pub-body">
           <p class="pub-authors">Rizzo, G.; <strong>Pérez Palma, N.</strong>; Ajmone Marsan, M.; Mancuso, V.</p>
-          <p class="pub-title"><a href="https://arxiv.org/abs/2302.08413" target="_blank" rel="noopener">On the Limit Performance of Floating Gossip.</a></p>
+          <p class="pub-title"><a href="https://ieeexplore.ieee.org/author/37088527083" target="_blank" rel="noopener">On the Limit Performance of Floating Gossip.</a></p>
           <p class="pub-venue"><em>IEEE INFOCOM 2023</em> · CORE A*</p>
         </div>
       </li>
@@ -292,7 +291,7 @@
         <div class="pub-year">2021</div>
         <div class="pub-body">
           <p class="pub-authors"><strong>Pérez Palma, N.</strong>; Dressler, F.; Mancuso, V.</p>
-          <p class="pub-title"><a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1519/Predictive%20content%20dissemination%20scheme%20exploiting%20realistic%20mobility%20patterns.pdf?sequence=3" target="_blank" rel="noopener">PRECISE: Predictive Content Dissemination Scheme Exploiting Realistic Mobility Patterns.</a></p>
+          <p class="pub-title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1389128621004746" target="_blank" rel="noopener">PRECISE: Predictive Content Dissemination Scheme Exploiting Realistic Mobility Patterns.</a></p>
           <p class="pub-venue"><em>Computer Networks</em> · Elsevier · JCR 5.49 · Q1</p>
         </div>
       </li>
@@ -301,7 +300,7 @@
         <div class="pub-year">2021</div>
         <div class="pub-body">
           <p class="pub-authors">Rizzo, G.; <strong>Pérez Palma, N.</strong>; Ajmone Marsan, M.; Mancuso, V.</p>
-          <p class="pub-title"><a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/930/TMC_REVISION.pdf" target="_blank" rel="noopener">Storage Capacity of Opportunistic Information Dissemination Systems.</a></p>
+          <p class="pub-title"><a href="https://ieeexplore.ieee.org/document/9347799/" target="_blank" rel="noopener">Storage Capacity of Opportunistic Information Dissemination Systems.</a></p>
           <p class="pub-venue"><em>IEEE Transactions on Mobile Computing</em> · JCR 7.9 · Q1</p>
         </div>
       </li>
@@ -319,12 +318,13 @@
 
     <ol class="timeline">
       <li class="timeline-item">
-        <div class="timeline-dates">2022 – Now</div>
-        <div class="timeline-content">
+        <div class="timeline-dates">2022 – Now
           <div class="org-logo-wrap">
             <img class="org-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Logo_UMU.jpg?width=300" alt="University of Murcia logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
             <span class="org-fallback">UMU</span>
           </div>
+        </div>
+        <div class="timeline-content">
           <h3>Postdoctoral Researcher</h3>
           <p class="timeline-org">University of Murcia · Dept. of Information and Communications Engineering</p>
           <p class="timeline-desc">Intelligent Systems and Telematics group (Prof. Antonio Skarmeta). Research on 6G security and trustworthiness. Teaching in undergraduate and Master programmes.</p>
@@ -332,12 +332,13 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-dates">2022 – 2024</div>
-        <div class="timeline-content">
+        <div class="timeline-dates">2022 – 2024
           <div class="org-logo-wrap">
             <img class="org-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Logotipo_UOC.svg?width=300" alt="Universitat Oberta de Catalunya logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
             <span class="org-fallback">UOC</span>
           </div>
+        </div>
+        <div class="timeline-content">
           <h3>Collaborator Professor (online teaching)</h3>
           <p class="timeline-org">Universitat Oberta de Catalunya (UOC)</p>
           <p class="timeline-desc">Online teaching of Network Fundamentals and Architectures, and Network Control and Management.</p>
@@ -345,12 +346,13 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-dates">2019</div>
-        <div class="timeline-content">
+        <div class="timeline-dates">2019
           <div class="org-logo-wrap">
             <img class="org-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Paderborn_Logo.jpg?width=300" alt="Paderborn University logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
             <span class="org-fallback">UPB</span>
           </div>
+        </div>
+        <div class="timeline-content">
           <h3>Visiting Scholar</h3>
           <p class="timeline-org">Paderborn University · CCS Labs · Germany</p>
           <p class="timeline-desc">Six-month research stay with Prof. Falko Dressler. Extended opportunistic communication paradigms to realistic mobility scenarios; results published as first author in <em>Computer Networks</em>.</p>
@@ -358,11 +360,12 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-dates">2016 – 2022</div>
-        <div class="timeline-content">
+        <div class="timeline-dates">2016 – 2022
           <div class="org-logo-wrap">
             <span class="org-fallback" style="display:block">IMDEA</span>
           </div>
+        </div>
+        <div class="timeline-content">
           <h3>Research Engineer / PhD Candidate</h3>
           <p class="timeline-org">IMDEA Networks Institute · Wireless Networking Group</p>
           <p class="timeline-desc">Doctoral studies on D2D communications, opportunistic content dissemination and mobile computing. Publications in IEEE TMC, IEEE INFOCOM and IEEE WoWMoM.</p>
@@ -370,12 +373,13 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-dates">2014 – 2016</div>
-        <div class="timeline-content">
+        <div class="timeline-dates">2014 – 2016
           <div class="org-logo-wrap">
             <img class="org-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Telef%C3%B3nica_2021_logo.svg?width=300" alt="Telefónica logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
             <span class="org-fallback">Telefónica</span>
           </div>
+        </div>
+        <div class="timeline-content">
           <h3>Testing Analyst · Project Manager</h3>
           <p class="timeline-org">Telefónica de España S.A.U. · Madrid</p>
           <p class="timeline-desc">Industry experience in a major telecommunications operator. Recipient of the Telefónica Talentum Universities scholarship.</p>
