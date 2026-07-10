@@ -64,7 +64,17 @@
     border-radius: 8px;
     padding: 6px 9px;
     overflow: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
   }
+  .proj-logo-wrap:hover {
+    border-color: var(--accent, #0f5a5a);
+    box-shadow: 0 3px 12px rgba(15, 20, 25, 0.12);
+    transform: translateY(-1px);
+  }
+  .proj-logo-wrap--dark { background: var(--accent, #0f5a5a); border-color: var(--accent, #0f5a5a); }
   .proj-logo { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
 
   /* --- Enlaces de proyecto (título -> web; enlace CORDIS en la meta) --- */
@@ -259,9 +269,9 @@
           <p class="project-role">Task Leader · Security and trustworthiness of the 6G end-to-end architecture</p>
           <p class="project-desc">European 6G flagship project under Horizon Europe / SNS-JU. 44 partners led by Nokia. Contributions oriented to 3GPP standardization.</p>
           <div class="project-extra">
-            <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
+            <a class="proj-logo-wrap proj-logo-wrap--dark" href="https://hexa-x-ii.eu/" target="_blank" rel="noopener" aria-label="HEXA-X-II – project website">
               <img class="proj-logo" src="https://hexa-x-ii.eu/wp-content/uploads/2022/12/Hexa-X-II-logo-negatext-RGB.png" alt="HEXA-X-II logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-            </div>
+            </a>
             <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101095759" target="_blank" rel="noopener">CORDIS ↗</a></div>
           </div>
         </div>
@@ -277,9 +287,9 @@
           <p class="project-role">Researcher · Security controls and AI-driven automation</p>
           <p class="project-desc">Holistic, Omnipresent, Resilient Services for Future 6G Wireless and Computing Ecosystems (SNS-JU).</p>
           <div class="project-extra">
-            <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
+            <a class="proj-logo-wrap proj-logo-wrap--dark" href="https://horse-6g.eu/" target="_blank" rel="noopener" aria-label="HORSE – project website">
               <img class="proj-logo" src="https://horse-6g.eu/wp-content/uploads/2023/02/HORSE_logo_white.png" alt="HORSE logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-            </div>
+            </a>
             <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101096342" target="_blank" rel="noopener">CORDIS ↗</a></div>
           </div>
         </div>
@@ -295,9 +305,9 @@
           <p class="project-role">Researcher · Cloud-native service orchestration and security</p>
           <p class="project-desc">Service-oriented 6G network architecture for distributed, intelligent and sustainable cloud-native communication systems (SNS-JU).</p>
           <div class="project-extra">
-            <div class="proj-logo-wrap">
-              <img class="proj-logo" src="logos/6g-cloud.png" alt="6G-Cloud logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-            </div>
+            <a class="proj-logo-wrap" href="https://www.6g-cloud.eu/" target="_blank" rel="noopener" aria-label="6G-Cloud – project website">
+              <img class="proj-logo" src="https://www.6g-cloud.eu/wp-content/uploads/elementor/thumbs/6G-cloud-horizontal-black-r0yvyh11cx40a5y3alfgk1y5vd6kbtpy5ofkjw79zw.png" alt="6G-Cloud logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
+            </a>
             <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101139073" target="_blank" rel="noopener">CORDIS ↗</a></div>
           </div>
         </div>
@@ -313,9 +323,9 @@
           <p class="project-role">Researcher · Operational coordination of implementation activities</p>
           <p class="project-desc">Cognitive AI-based security for IoT, Smart Cities and 5G/6G infrastructures. NextGenerationEU, coordinated by University of Murcia.</p>
           <div class="project-extra">
-            <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
+            <a class="proj-logo-wrap proj-logo-wrap--dark" href="https://cerberus.inf.um.es/" target="_blank" rel="noopener" aria-label="CERBERUS – project website">
               <img class="proj-logo" src="https://cerberus.inf.um.es/images/LogoCerberus_Horizontal_Positivo_5GBlanco.png" alt="CERBERUS logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-            </div>
+            </a>
             <div class="proj-cordis"><a href="https://www.um.es/web/atica/noticias/proyecto-cerberus" target="_blank" rel="noopener">UMU ↗</a></div>
           </div>
         </div>
