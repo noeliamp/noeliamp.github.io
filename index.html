@@ -90,6 +90,17 @@
   }
   .proj-cordis a:hover { border-bottom-color: var(--accent, #0f5a5a); }
 
+  /* --- Fila derecha: logo + enlace CORDIS bajo la descripción --- */
+  .project-extra {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .project-extra .proj-logo-wrap { margin-top: 0; }
+  .project-extra .proj-cordis { margin-top: 0; }
+
   /* --- Enlace en el título de cada publicación --- */
   .pub-title a {
     color: inherit;
@@ -242,56 +253,72 @@
         <div class="project-meta">
           <span class="project-years">2023 – 2025</span>
           <span class="project-budget">€25.6M</span>
-          <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
-            <img class="proj-logo" src="https://hexa-x-ii.eu/wp-content/uploads/2022/12/Hexa-X-II-logo-negatext-RGB.png" alt="HEXA-X-II logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-          </div>
-          <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101095759" target="_blank" rel="noopener">CORDIS ↗</a></div>
         </div>
-        <h3 class="project-title"><a href="https://hexa-x-ii.eu/" target="_blank" rel="noopener">HEXA-X-II</a></h3>
-        <p class="project-role">Task Leader · Security and trustworthiness of the 6G end-to-end architecture</p>
-        <p class="project-desc">European 6G flagship project under Horizon Europe / SNS-JU. 44 partners led by Nokia. Contributions oriented to 3GPP standardization.</p>
+        <div class="project-body">
+          <h3 class="project-title"><a href="https://hexa-x-ii.eu/" target="_blank" rel="noopener">HEXA-X-II</a></h3>
+          <p class="project-role">Task Leader · Security and trustworthiness of the 6G end-to-end architecture</p>
+          <p class="project-desc">European 6G flagship project under Horizon Europe / SNS-JU. 44 partners led by Nokia. Contributions oriented to 3GPP standardization.</p>
+          <div class="project-extra">
+            <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
+              <img class="proj-logo" src="https://hexa-x-ii.eu/wp-content/uploads/2022/12/Hexa-X-II-logo-negatext-RGB.png" alt="HEXA-X-II logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
+            </div>
+            <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101095759" target="_blank" rel="noopener">CORDIS ↗</a></div>
+          </div>
+        </div>
       </li>
 
       <li class="project-item">
         <div class="project-meta">
           <span class="project-years">2023 – 2025</span>
           <span class="project-budget">€5.3M</span>
-          <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
-            <img class="proj-logo" src="https://horse-6g.eu/wp-content/uploads/2023/02/HORSE_logo_white.png" alt="HORSE logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-          </div>
-          <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101096342" target="_blank" rel="noopener">CORDIS ↗</a></div>
         </div>
-        <h3 class="project-title"><a href="https://horse-6g.eu/" target="_blank" rel="noopener">HORSE</a></h3>
-        <p class="project-role">Researcher · Security controls and AI-driven automation</p>
-        <p class="project-desc">Holistic, Omnipresent, Resilient Services for Future 6G Wireless and Computing Ecosystems (SNS-JU).</p>
+        <div class="project-body">
+          <h3 class="project-title"><a href="https://horse-6g.eu/" target="_blank" rel="noopener">HORSE</a></h3>
+          <p class="project-role">Researcher · Security controls and AI-driven automation</p>
+          <p class="project-desc">Holistic, Omnipresent, Resilient Services for Future 6G Wireless and Computing Ecosystems (SNS-JU).</p>
+          <div class="project-extra">
+            <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
+              <img class="proj-logo" src="https://horse-6g.eu/wp-content/uploads/2023/02/HORSE_logo_white.png" alt="HORSE logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
+            </div>
+            <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101096342" target="_blank" rel="noopener">CORDIS ↗</a></div>
+          </div>
+        </div>
       </li>
 
       <li class="project-item">
         <div class="project-meta">
           <span class="project-years">2024 – 2026</span>
           <span class="project-budget">€4.3M</span>
-          <div class="proj-logo-wrap">
-            <img class="proj-logo" src="logos/6g-cloud.png" alt="6G-Cloud logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-          </div>
-          <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101139073" target="_blank" rel="noopener">CORDIS ↗</a></div>
         </div>
-        <h3 class="project-title"><a href="https://www.6g-cloud.eu/" target="_blank" rel="noopener">6G-Cloud</a></h3>
-        <p class="project-role">Researcher · Cloud-native service orchestration and security</p>
-        <p class="project-desc">Service-oriented 6G network architecture for distributed, intelligent and sustainable cloud-native communication systems (SNS-JU).</p>
+        <div class="project-body">
+          <h3 class="project-title"><a href="https://www.6g-cloud.eu/" target="_blank" rel="noopener">6G-Cloud</a></h3>
+          <p class="project-role">Researcher · Cloud-native service orchestration and security</p>
+          <p class="project-desc">Service-oriented 6G network architecture for distributed, intelligent and sustainable cloud-native communication systems (SNS-JU).</p>
+          <div class="project-extra">
+            <div class="proj-logo-wrap">
+              <img class="proj-logo" src="logos/6g-cloud.png" alt="6G-Cloud logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
+            </div>
+            <div class="proj-cordis"><a href="https://cordis.europa.eu/project/id/101139073" target="_blank" rel="noopener">CORDIS ↗</a></div>
+          </div>
+        </div>
       </li>
 
       <li class="project-item">
         <div class="project-meta">
           <span class="project-years">2021 – 2025</span>
           <span class="project-budget">€3.2M</span>
-          <div class="proj-logo-wrap">
-            <img class="proj-logo" src="logos/cerberus.png" alt="CERBERUS logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
-          </div>
-          <div class="proj-cordis"><a href="https://www.um.es/web/atica/noticias/proyecto-cerberus" target="_blank" rel="noopener">UMU ↗</a></div>
         </div>
-        <h3 class="project-title"><a href="https://www.um.es/web/atica/noticias/proyecto-cerberus" target="_blank" rel="noopener">CERBERUS</a></h3>
-        <p class="project-role">Researcher · Operational coordination of implementation activities</p>
-        <p class="project-desc">Cognitive AI-based security for IoT, Smart Cities and 5G/6G infrastructures. NextGenerationEU, coordinated by University of Murcia.</p>
+        <div class="project-body">
+          <h3 class="project-title"><a href="https://cerberus.inf.um.es/" target="_blank" rel="noopener">CERBERUS</a></h3>
+          <p class="project-role">Researcher · Operational coordination of implementation activities</p>
+          <p class="project-desc">Cognitive AI-based security for IoT, Smart Cities and 5G/6G infrastructures. NextGenerationEU, coordinated by University of Murcia.</p>
+          <div class="project-extra">
+            <div class="proj-logo-wrap" style="background:#0f1419;border-color:#0f1419">
+              <img class="proj-logo" src="https://cerberus.inf.um.es/images/LogoCerberus_Horizontal_Positivo_5GBlanco.png" alt="CERBERUS logo" onerror="this.closest('.proj-logo-wrap').style.display='none'">
+            </div>
+            <div class="proj-cordis"><a href="https://www.um.es/web/atica/noticias/proyecto-cerberus" target="_blank" rel="noopener">UMU ↗</a></div>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
