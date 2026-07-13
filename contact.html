@@ -14,12 +14,12 @@
    Fonts: Bricolage Grotesque (display) · Inter (body) · IBM Plex Mono (data)
    ============================================================ */
 :root{
-  --sidebar-1:#123039; --sidebar-2:#0c2027;
-  --bg:#f4f6f7; --card:#ffffff;
-  --ink:#13252d; --ink-soft:#54666e; --ink-mute:#8b9aa0;
-  --line:#e3e8ea; --line-2:#eef1f2;
-  --accent:#0a9aad; --accent-deep:#087d8d; --accent-bright:#22c9dc;
-  --sb-text:#eaf3f4; --sb-mute:#8fb4bb; --sb-line:rgba(255,255,255,.10);
+  --sidebar-1:#1e5140; --sidebar-2:#143a2e;
+  --bg:#f6f2e9; --card:#fffdf7;
+  --ink:#1c2a22; --ink-soft:#55605a; --ink-mute:#8f9188;
+  --line:#e6ddcb; --line-2:#efe9db;
+  --accent:#2a8f66; --accent-deep:#1d6f4f; --accent-bright:#4bbf8c;
+  --sb-text:#eef4ee; --sb-mute:#a4c4b4; --sb-line:rgba(255,255,255,.10);
   --serif:'Bricolage Grotesque',system-ui,sans-serif;
   --sans:'Inter',system-ui,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
@@ -50,8 +50,8 @@ em{font-style:italic;color:var(--accent-deep)}
   @keyframes pulse{0%{opacity:0;transform:scale(.6)}30%{opacity:.5}100%{opacity:0;transform:scale(1.15)}}
   .signal{transform-box:fill-box}
 }
-.photo{position:relative;width:124px;height:124px;border-radius:50%;object-fit:cover;margin:0 auto;display:block;border:3px solid rgba(34,201,220,.55);box-shadow:0 6px 22px rgba(0,0,0,.35);background:#0c2027}
-.photo-fallback{width:124px;height:124px;border-radius:50%;margin:0 auto;display:none;align-items:center;justify-content:center;font-family:var(--serif);font-size:2.4rem;color:var(--accent-bright);border:3px solid rgba(34,201,220,.55);background:#0c2027}
+.photo{position:relative;width:124px;height:124px;border-radius:50%;object-fit:cover;margin:0 auto;display:block;border:3px solid rgba(75,191,140,.55);box-shadow:0 6px 22px rgba(0,0,0,.35);background:#143a2e}
+.photo-fallback{width:124px;height:124px;border-radius:50%;margin:0 auto;display:none;align-items:center;justify-content:center;font-family:var(--serif);font-size:2.4rem;color:var(--accent-bright);border:3px solid rgba(75,191,140,.55);background:#143a2e}
 .sb-name{font-family:var(--serif);font-weight:700;font-size:1.5rem;line-height:1.12;letter-spacing:-.01em;margin-top:1.15rem}
 .sb-name a{text-decoration:none;color:inherit}
 .sb-role{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-bright);margin-top:.55rem}
@@ -63,11 +63,11 @@ em{font-style:italic;color:var(--accent-deep)}
 .sb-nav a:hover,.sb-nav a.active{color:#fff}
 .sb-nav a:hover .bar,.sb-nav a.active .bar{width:16px}
 .sb-nav a.active .num{color:var(--accent-bright)}
-.sb-cv{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.6rem;font-family:var(--mono);font-size:.76rem;letter-spacing:.03em;text-transform:uppercase;color:#0c2027;background:var(--accent-bright);text-decoration:none;padding:.62rem 1rem;border-radius:7px;font-weight:600;transition:transform .15s ease,box-shadow .15s ease;align-self:flex-start}
-.sb-cv:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(34,201,220,.28)}
+.sb-cv{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.6rem;font-family:var(--mono);font-size:.76rem;letter-spacing:.03em;text-transform:uppercase;color:#143a2e;background:var(--accent-bright);text-decoration:none;padding:.62rem 1rem;border-radius:7px;font-weight:600;transition:transform .15s ease,box-shadow .15s ease;align-self:flex-start}
+.sb-cv:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(75,191,140,.3)}
 .sb-social{display:flex;gap:.55rem;margin-top:1.5rem;flex-wrap:wrap}
 .sb-social a{width:34px;height:34px;border-radius:50%;border:1px solid var(--sb-line);display:flex;align-items:center;justify-content:center;color:var(--sb-mute);text-decoration:none;transition:all .18s ease}
-.sb-social a:hover{color:#0c2027;background:var(--accent-bright);border-color:var(--accent-bright);transform:translateY(-2px)}
+.sb-social a:hover{color:#143a2e;background:var(--accent-bright);border-color:var(--accent-bright);transform:translateY(-2px)}
 .sb-social svg{width:16px;height:16px;display:block}
 .sb-foot{margin-top:auto;padding-top:1.6rem;font-family:var(--mono);font-size:.66rem;color:var(--sb-mute);letter-spacing:.03em;line-height:1.7}
 
@@ -111,7 +111,7 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .rcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
 .rcard:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(19,37,45,.08);border-color:#d4dcde}
-.rcard .tick{width:26px;height:26px;border-radius:7px;background:rgba(10,154,173,.1);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem}
+.rcard .tick{width:26px;height:26px;border-radius:7px;background:rgba(42,143,102,.12);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem}
 .rcard .tick svg{width:15px;height:15px}
 .rcard h3{font-family:var(--serif);font-weight:600;font-size:1.12rem;letter-spacing:-.01em;line-height:1.2}
 .rcard p{font-size:.92rem;color:var(--ink-soft);margin-top:.55rem}
@@ -130,7 +130,7 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
 .proj .desc{font-size:.92rem;color:var(--ink-soft);margin-top:.5rem;max-width:62ch}
 .proj-extra{display:flex;align-items:center;gap:1rem;margin-top:1rem;flex-wrap:wrap}
 .logo-btn{display:flex;align-items:center;justify-content:flex-start;width:100%;max-width:150px;height:46px;padding:6px 10px;border-radius:8px;background:var(--accent-deep);border:1px solid var(--accent-deep);text-decoration:none;transition:transform .15s ease,box-shadow .15s ease;overflow:hidden}
-.logo-btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(8,125,141,.3)}
+.logo-btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(29,111,79,.3)}
 .logo-btn img{max-width:100%;max-height:100%;object-fit:contain}
 .logo-btn img.inv{filter:brightness(0) invert(1)}
 .cordis{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase}
@@ -215,6 +215,37 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
   .slist li{grid-template-columns:1fr}
 }
 
+
+/* acronym badge (for projects without a hotlinkable logo) */
+.logo-btn.acr{justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:1rem;letter-spacing:.01em;text-decoration:none}
+.logo-btn.static{cursor:default}
+.logo-btn.static:hover{transform:none;box-shadow:none}
+.proj-fund{font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;color:var(--ink-mute);text-transform:uppercase;line-height:1.5;margin-top:.15rem}
+.logo-btn.acr{font-size:.9rem;white-space:nowrap;padding:6px 8px}
+
+.trow h4 .en{font-family:var(--sans);font-weight:400;font-style:italic;color:var(--ink-mute);font-size:.82rem;margin-left:.1rem}
+
+
+
+
+
+
+/* institution logos in experience timeline */
+.tli{padding-right:66px}
+.tli-logo{position:absolute;right:0;top:2px;width:52px;height:52px;border:1px solid var(--line);border-radius:11px;background:#fff;display:flex;align-items:center;justify-content:center;padding:7px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.tli-logo img{max-width:100%;max-height:100%;object-fit:contain}
+.tli-logo span{display:none;font-family:var(--serif);font-weight:700;color:var(--accent-deep);font-size:.9rem;align-items:center;justify-content:center;width:100%;height:100%}
+@media (max-width:620px){.tli{padding-right:56px}.tli-logo{width:44px;height:44px}}
+
+
+/* contact card icons */
+.ccard{flex-direction:row;align-items:center;gap:.9rem}
+.cicon{width:42px;height:42px;flex:none;border-radius:10px;background:rgba(42,143,102,.1);color:var(--accent-deep);display:flex;align-items:center;justify-content:center}
+.cicon svg{width:20px;height:20px;display:block}
+.cicon-img{background:#fff;border:1px solid var(--line);padding:5px}
+.cicon-img img{width:100%;height:100%;object-fit:contain}
+.ctext{display:flex;flex-direction:column;gap:.12rem;min-width:0}
+
 </style>
 </head>
 <body>
@@ -263,12 +294,12 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.3rem)
   <section>
     <div class="wrap">
       <div class="contact-grid">
-        <a class="ccard" href="mailto:noelia.perez3@um.es"><span class="cl">Email</span><span class="cv">noelia.perez3@um.es</span></a>
-        <a class="ccard" href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener"><span class="cl">Google Scholar</span><span class="cv">View publications →</span></a>
-        <a class="ccard" href="https://www.linkedin.com/in/noelia-perez-palma/" target="_blank" rel="noopener"><span class="cl">LinkedIn</span><span class="cv">Connect →</span></a>
-        <a class="ccard" href="https://orcid.org/0000-0001-6131-7106" target="_blank" rel="noopener"><span class="cl">ORCID</span><span class="cv">0000-0001-6131-7106</span></a>
-        <a class="ccard" href="https://portalinvestigacion.um.es/investigadores/378258/detalle" target="_blank" rel="noopener"><span class="cl">UMU · Research Portal</span><span class="cv">View profile →</span></a>
-        <a class="ccard" href="cv.pdf" target="_blank" rel="noopener"><span class="cl">Curriculum Vitae</span><span class="cv">Download PDF ↓</span></a>
+        <a class="ccard" href="mailto:noelia.perez3@um.es"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span class="ctext"><span class="cl">Email</span><span class="cv">noelia.perez3@um.es</span></span></a>
+        <a class="ccard" href="https://scholar.google.com/citations?user=sKx3AEAAAAAJ&amp;hl=es" target="_blank" rel="noopener"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4 2 9l10 5 8-4v6"/><path d="M6 12v4c0 1.5 2.7 3 6 3s6-1.5 6-3v-4"/></svg></span><span class="ctext"><span class="cl">Google Scholar</span><span class="cv">View publications →</span></span></a>
+        <a class="ccard" href="https://www.linkedin.com/in/noelia-perez-palma/" target="_blank" rel="noopener"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v6M8 7v.01M12 16v-3.5c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8V16"/></svg></span><span class="ctext"><span class="cl">LinkedIn</span><span class="cv">Connect →</span></span></a>
+        <a class="ccard" href="https://orcid.org/0000-0001-6131-7106" target="_blank" rel="noopener"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M9 8v.01"/></svg></span><span class="ctext"><span class="cl">ORCID</span><span class="cv">0000-0001-6131-7106</span></span></a>
+        <a class="ccard" href="https://portalinvestigacion.um.es/investigadores/378258/detalle" target="_blank" rel="noopener"><span class="cicon cicon-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Universitas%20Studiorum%20Murciana%20b-w.png" alt="UMU" onerror="this.style.display='none'"></span><span class="ctext"><span class="cl">UMU · Research Portal</span><span class="cv">View profile →</span></span></a>
+        <a class="ccard" href="cv.pdf" target="_blank" rel="noopener"><span class="cicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg></span><span class="ctext"><span class="cl">Curriculum Vitae</span><span class="cv">Download PDF ↓</span></span></a>
       </div>
       <div class="foot">© 2026 Noelia Pérez Palma · Universidad de Murcia · Ingeniería Telemática · <a href="https://pages.github.com" target="_blank" rel="noopener">Hosted on GitHub Pages</a></div>
     </div>
